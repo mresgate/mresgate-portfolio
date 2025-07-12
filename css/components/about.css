@@ -27,6 +27,17 @@
   padding: 1rem;
 }
 
+.about .about__left ul li img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.about .about__left ul li img[alt="Linkedin"],
+.about .about__left ul li img[alt="GitHub"] {
+  width: 3rem;
+  height: 3rem;
+}
+
 .about .about__right {
   flex: 1;
   max-width: 66rem;

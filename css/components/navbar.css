@@ -78,3 +78,10 @@
     text-align: center;
   }
 }
+
+.navbar .navbar__content > a > img {
+  height: 4.5rem;
+  width: auto;
+  max-width: 170px;
+  display: block;
+}
