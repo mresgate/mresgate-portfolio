@@ -25,3 +25,9 @@ footer .footer__content ul a {
 footer .footer__content .footer__copyright {
   font-size: 1.4rem;
 }
+
+footer .footer__content ul a img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}

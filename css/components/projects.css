@@ -26,8 +26,8 @@
 
 .projects ul li .image img {
   width: 100%;
-  min-width: 40rem;
-  max-width: 47rem;
+  min-width: 50rem;
+  max-width: 60rem;
   height: auto;
 }
 

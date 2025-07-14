@@ -56,84 +56,49 @@
       <ul>
         <li>
           <div class="image">
-            <img src="assets/task-manager.png" alt="Gerenciamento de tarefas" />
+            <img id="main-inventory-img" src="assets/sistema de gestao stock.png" alt="Sistema de Gestão Inteligente de Inventário" style="cursor: pointer;" />
           </div>
           <div class="projects__info">
             <h3 class="tertiary-title">
-              Sistema de gerenciamento de tarefas DEF
+               Sistema de Gestão Inteligente de Inventário
             </h3>
             <p>
-              Sistema web desenvolvido para a empresa DEF, com funcionalidades
-              como cadastro de tarefas, atribuição de responsáveis e
-              acompanhamento do status das atividades. Desenvolvido com React,
-              Node.js e PostgreSQL.
+              Um sistema web completo e moderno para gestão de armazéns e controle de estoque, desenvolvido com foco em eficiência, automação e usabilidade. Projetado para empresas que buscam monitoramento em tempo real, inteligência analítica e controle preciso sobre operações logísticas.
             </p>
-            <a href="#">Leia mais &rarr;</a>
+            <a href="#" id="open-inventory-modal">Leia mais &rarr;</a>
           </div>
         </li>
         <li class="projects__reversed-list">
           <div class="image">
-            <img src="assets/ecommerce.png" alt="ecommerce" />
+            <img id="organigest-img" src="assets/organigest.png" alt="OrganiGest" style="cursor: pointer;" />
           </div>
           <div class="projects__info">
             <h3 class="tertiary-title">
-              Desenvolvimento de Loja Virtual MeuSofazim.com
+              OrganiGest
             </h3>
             <p>
-              Site de e-commerce desenvolvido do zero com tecnologias como React
-              e Node.js, além de integração com diversos meios de pagamento e
-              entrega. Sistema completo com painel administrativo e relatórios.
+              O OrganiGest é uma plataforma moderna e robusta desenvolvida para a gestão eficiente de escritórios de contabilidade. Com foco em produtividade, organização e comunicação, a aplicação oferece um ecossistema completo que centraliza as operações diárias de equipas contabilísticas, promovendo eficiência, transparência e escalabilidade.            
+              <br>
+              <br>
+              <u>Objetivo Principal</u>
+              <br>
+              Simplificar e otimizar a gestão administrativa de empresas de contabilidade por meio de ferramentas digitais inteligentes, com foco na centralização de informações, comunicação integrada, gestão de tarefas, e análise de desempenho em tempo real.
             </p>
-            <a href="#">Leia mais &rarr;</a>
+            <a href="#" id="open-organigest-details">Leia mais &rarr;</a>
           </div>
         </li>
         <li>
           <div class="image">
-            <img src="assets/delivery.png" alt="delivery" />
+            <img id="pulsemind-img" src="assets/pulsemind.png" alt="PulseMind - Plataforma de Bem-Estar Corporativo" style="cursor: pointer;" />
           </div>
           <div class="projects__info">
             <h3 class="tertiary-title">
-              App de delivery e Dashboard DeliveryJá!
+              PulseMind - Plataforma de Bem-Estar Corporativo
             </h3>
             <p>
-              Aplicativo mobile desenvolvido para a empresa DeliveryJá!,
-              permitindo a realização de pedidos e acompanhamento em tempo real
-              do status da entrega. Desenvolvido com React Native e Firebase.
+              PulseMind é uma plataforma de bem-estar corporativo em tempo real que utiliza inteligência artificial para monitorar, analisar e promover um clima organizacional saudável. A solução é centrada em uma experiência leve, interativa e baseada em dados, com foco na prevenção de burnout, aumento da motivação e fortalecimento da cultura de reconhecimento.
             </p>
-            <a href="#">Leia mais &rarr;</a>
-          </div>
-        </li>
-        <li class="projects__reversed-list">
-          <div class="image">
-            <img src="assets/notebook.png" alt="Sistema de Gestão" />
-          </div>
-          <div class="projects__info">
-            <h3 class="tertiary-title">
-              Sistema de Gestão Empresarial ERP
-            </h3>
-            <p>
-              Sistema completo de gestão empresarial desenvolvido para uma
-              empresa de médio porte, incluindo módulos de vendas, estoque,
-              financeiro e recursos humanos. Desenvolvido com Angular e .NET Core.
-            </p>
-            <a href="#">Leia mais &rarr;</a>
-          </div>
-        </li>
-        <li>
-          <div class="image">
-            <img src="assets/phone.png" alt="App de Saúde" />
-          </div>
-          <div class="projects__info">
-            <h3 class="tertiary-title">
-              Aplicativo de Monitoramento de Saúde
-            </h3>
-            <p>
-              Aplicativo mobile para monitoramento de saúde e bem-estar,
-              desenvolvido com React Native e integração com dispositivos
-              wearables. Inclui funcionalidades de tracking de exercícios e
-              nutrição.
-            </p>
-            <a href="#">Leia mais &rarr;</a>
+            <a href="#" id="open-pulsemind-details">Leia mais &rarr;</a>
           </div>
         </li>
       </ul>
@@ -153,13 +118,10 @@
         </div>
         <ul class="mb-l">
           <li>
-            <a href="#"><img src="assets/instagram.svg" alt="Instagram" /></a>
+            <a href="https://www.linkedin.com/in/miguel-resgate-a9504817b/" target="_blank" rel="noopener noreferrer"><img src="assets/icons8-linkedin-48.png" alt="Linkedin" /></a>
           </li>
           <li>
-            <a href="#"><img src="assets/linkedin.svg" alt="Linkedin" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="assets/facebook.svg" alt="Facebook" /></a>
+            <a href="https://github.com/mresgate" target="_blank" rel="noopener noreferrer"><img src="assets/icons8-github-50.png" alt="GitHub" /></a>
           </li>
         </ul>
         <p class="footer__copyright">
@@ -167,6 +129,171 @@
         </p>
       </div>
     </footer>
+    <!-- Modal para imagem ampliada -->
+    <div id="image-modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:1000;">
+      <span id="close-modal" style="position:absolute; top:2rem; right:3rem; font-size:3rem; color:#fff; cursor:pointer; font-weight:bold;">&times;</span>
+      <img src="assets/sistema de gestao stock.png" alt="Sistema de Gestão Inteligente de Inventário" style="max-width:90vw; max-height:90vh; border-radius:1rem; box-shadow:0 0 20px #000; background:#fff;" />
+    </div>
+    <!-- Modal de detalhes do projeto -->
+    <div id="project-details-modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:2000;">
+      <div style="background:#fff; max-width:600px; width:90vw; max-height:90vh; overflow-y:auto; border-radius:1rem; padding:2.5rem 2rem; position:relative; box-shadow:0 0 20px #000;">
+        <span id="close-details-modal" style="position:absolute; top:1.5rem; right:2rem; font-size:2.5rem; color:#333; cursor:pointer; font-weight:bold;">&times;</span>
+        <h2 style="margin-bottom:1.5rem;">🚀 Funcionalidades principais</h2>
+        <ul style="margin-bottom:2rem;">
+          <li>Gestão de estoque em tempo real com alertas automáticos.</li>
+          <li>Cadastro avançado de produtos com suporte a imagens, categorias e códigos de barras.</li>
+          <li>Rastreamento de movimentações, entradas, saídas e transferências.</li>
+          <li>Dashboard analítico com gráficos interativos, métricas e previsões.</li>
+          <li>Gestão de fornecedores e pedidos com histórico detalhado.</li>
+          <li>Mapeamento inteligente do armazém com otimização de espaço e localização.</li>
+        </ul>
+        <h2 style="margin-bottom:1.5rem;">🛠️ Tecnologias utilizadas</h2>
+        <ul style="margin-bottom:2rem;">
+          <li>Frontend: React 18 + TypeScript, Vite, Tailwind CSS, Shadcn/UI</li>
+          <li>Gerenciamento de estado e dados: React Query, React Hook Form, Zod</li>
+          <li>Gráficos e visualização: Recharts, Lucide React</li>
+          <li>Infraestrutura: Suporte a deploy em Vercel, Netlify, AWS S3/CloudFront, entre outros</li>
+        </ul>
+        <h2 style="margin-bottom:1.5rem;">✅ Recursos adicionais</h2>
+        <ul style="margin-bottom:2rem;">
+          <li>Autenticação segura e controle de acesso por perfil</li>
+          <li>Relatórios fiscais e personalizados com exportação</li>
+          <li>Estrutura modular e escalável com organização por componentes</li>
+          <li>Suporte a testes unitários e E2E</li>
+        </ul>
+        <p><strong>Versão:</strong> 1.0.0 — <strong>Última atualização:</strong> Dezembro de 2024</p>
+        <p><strong>Licença:</strong> MIT</p>
+        <p><strong>Status:</strong> Ativamente mantido com suporte e atualizações regulares</p>
+      </div>
+    </div>
+    <!-- Modal de detalhes OrganiGest -->
+    <div id="organigest-details-modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:2000;">
+      <div style="background:#fff; max-width:600px; width:90vw; max-height:90vh; overflow-y:auto; border-radius:1rem; padding:2.5rem 2rem; position:relative; box-shadow:0 0 20px #000;">
+        <span id="close-organigest-details" style="position:absolute; top:1.5rem; right:2rem; font-size:2.5rem; color:#333; cursor:pointer; font-weight:bold;">&times;</span>
+        <h2 style="margin-bottom:1.5rem;">Funcionalidades-Chave</h2>
+        <ul style="margin-bottom:2rem;">
+          <li><b>Gestão de Clientes</b><br>Cadastro completo com detalhes e credenciais<br>Histórico de interações<br>Filtros avançados por tipo, estado e data<br>Atribuição de tarefas diretamente ao cliente</li>
+          <li><b>Dashboard Inteligente</b><br>KPIs e métricas atualizadas em tempo real<br>Ações rápidas e visão centralizada de pendências<br>Interface responsiva e intuitiva</li>
+          <li><b>Sistema de Tarefas</b><br>Criação, atribuição e controle de tarefas por prioridade e status<br>Filtros por cliente, prazo e progresso<br>Estados personalizáveis: Pendente, Em Progresso, Concluída</li>
+          <li><b>Comunicações Internas</b><br>Chat corporativo entre colaboradores<br>Notificações em tempo real<br>Estados de presença e leitura de mensagens</li>
+          <li><b>Gestão de Colaboradores</b><br>Cadastro completo com papéis e permissões<br>Histórico de atividades e gestão de acessos<br>Monitoramento de disponibilidade (online, ausente, ocupado)</li>
+          <li><b>Painel Administrativo Global</b><br>Estatísticas de uso e monitoramento em tempo real<br>Gestão de múltiplas empresas e auditoria do sistema<br>Configurações globais e logs de segurança</li>
+          <li><b>Sistema de Autenticação e Onboarding</b><br>Login seguro e gerenciamento de sessões<br>Registro guiado para novas empresas<br>Processo de ativação assistido e modular</li>
+          <li><b>Configurações Avançadas</b><br>Gerenciamento de perfis, notificações, permissões e segurança<br>Interface amigável com foco em autonomia do utilizador</li>
+        </ul>
+        <h2 style="margin-bottom:1.5rem;">🛠 Tecnologias Utilizadas</h2>
+        <ul style="margin-bottom:2rem;">
+          <li>Frontend: React 18 + TypeScript</li>
+          <li>Build Tool: Vite</li>
+          <li>UI: Tailwind CSS + shadcn/ui + Radix UI</li>
+          <li>Gerenciamento de Estado: Zustand</li>
+          <li>Forms & Validação: React Hook Form + Zod</li>
+          <li>Roteamento: React Router DOM v6</li>
+          <li>Consultas Assíncronas: TanStack Query v5</li>
+          <li>Gráficos: Recharts</li>
+          <li>Ícones: Lucide React</li>
+        </ul>
+        <h2 style="margin-bottom:1.5rem;">📁 Estrutura do Projeto</h2>
+        <pre style="background:#f5f5f5; padding:1rem; border-radius:0.5rem; font-size:1.3rem; margin-bottom:2rem;">src/
+├── app/              # Páginas e rotas estruturadas
+├── components/       # Componentes reutilizáveis organizados por domínio
+├── hooks/            # Hooks customizados para lógica reutilizável
+├── store/            # Estado global com Zustand (por domínio)
+├── types/            # Definições de tipos TypeScript
+├── services/         # Serviços de dados e mocks
+├── utils/            # Funções auxiliares e validações
+├── pages/            # Landing pages e páginas estáticas</pre>
+        <h2 style="margin-bottom:1.5rem;">🔐 Níveis de Acesso</h2>
+        <ul style="margin-bottom:2rem;">
+          <li><b>🔴 Administrador Global</b><br>Controle completo do sistema e todas as empresas<br>Acesso às ferramentas de monitoramento e auditoria</li>
+          <li><b>🟠 Administrador Local</b><br>Gestão da empresa e seus colaboradores<br>Acesso limitado ao escopo da empresa</li>
+          <li><b>🟢 Colaborador</b><br>Acesso às suas tarefas, clientes atribuídos e comunicação</li>
+        </ul>
+        <h2 style="margin-bottom:1.5rem;">📦 Instalação Local</h2>
+        <p><b>Pré-requisitos:</b><br>Node.js v18+<br>npm, yarn ou bun</p>
+        <p><b>Etapas:</b></p>
+        <pre style="background:#f5f5f5; padding:1rem; border-radius:0.5rem; font-size:1.3rem; margin-bottom:2rem;">git clone [URL_DO_REPOSITORIO]
+cd OrganiGest
+
+# Instalar dependências
+npm install     # ou yarn install, ou bun install
+
+# Iniciar o servidor de desenvolvimento
+npm run dev     # ou yarn dev, ou bun dev
+
+# Aceder: http://localhost:8080</pre>
+        <h2 style="margin-bottom:1.5rem;">Scripts Disponíveis</h2>
+        <ul style="margin-bottom:2rem;">
+          <li>dev – Servidor de desenvolvimento</li>
+          <li>build – Compilação para produção</li>
+          <li>preview – Visualização da build</li>
+          <li>lint – Verificação de estilo/código</li>
+        </ul>
+        <h2 style="margin-bottom:1.5rem;">✅ Diferenciais Técnicos</h2>
+        <ul style="margin-bottom:2rem;">
+          <li>Arquitetura baseada em Atomic Design</li>
+          <li>Abordagem modular por domínio (clientes, tarefas, comunicações, etc.)</li>
+          <li>Componentes altamente reutilizáveis</li>
+          <li>Suporte nativo para multiempresa</li>
+          <li>Sistema completo de permissões e auditoria</li>
+          <li>Otimização para performance com Vite + lazy loading</li>
+          <li>Extensível para integrações futuras (ex: APIs externas, módulos fiscais)</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Modal de detalhes PulseMind -->
+    <div id="pulsemind-details-modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:2000;">
+      <div style="background:#fff; max-width:600px; width:90vw; max-height:90vh; overflow-y:auto; border-radius:1rem; padding:2.5rem 2rem; position:relative; box-shadow:0 0 20px #000;">
+        <span id="close-pulsemind-details" style="position:absolute; top:1.5rem; right:2rem; font-size:2.5rem; color:#333; cursor:pointer; font-weight:bold;">&times;</span>
+        <h2 style="margin-bottom:1.5rem;">Funcionalidades Principais</h2>
+        <ul style="margin-bottom:2rem;">
+          <li><b>Check-in Diário</b><br>Microperguntas de humor, motivação e carga de trabalho (30 segundos).<br>Interface rápida e intuitiva.</li>
+          <li><b>Clima Organizacional em Tempo Real</b><br>Dashboard com radar emocional.<br>Detecção de tensões e estados de alerta.</li>
+          <li><b>Análise Preditiva com IA</b><br>Risco de burnout, queda de performance e rotatividade.<br>Alertas automáticos e relatórios de tendências.</li>
+          <li><b>Ações Inteligentes</b><br>Sugestões personalizadas baseadas em dados.<br>Lembretes e microações para bem-estar.</li>
+          <li><b>Reconhecimento Gamificado</b><br>Ranking de elogios entre colegas.<br>Estímulo à cultura positiva.</li>
+        </ul>
+        <h2 style="margin-bottom:1.5rem;">🎨 Design System</h2>
+        <ul style="margin-bottom:2rem;">
+          <li><b>Estilo Visual:</b> Glassmorphism + Neumorphism</li>
+          <li><b>Cores:</b> Gradientes vibrantes (roxo, azul-ciano, coral, limão)</li>
+          <li><b>Interação:</b> Animações suaves (Framer Motion)</li>
+          <li><b>UX:</b> Avatares animados e feedback em tempo real</li>
+        </ul>
+        <h2 style="margin-bottom:1.5rem;">🛠 Tecnologias Utilizadas</h2>
+        <ul style="margin-bottom:2rem;">
+          <li>Frontend: React 18, TypeScript, Tailwind CSS, Framer Motion, shadcn/ui, Lucide React</li>
+          <li>Ferramentas de Build: Vite, ESLint</li>
+        </ul>
+        <h2 style="margin-bottom:1.5rem;">📁 Arquitetura de Código</h2>
+        <pre style="background:#f5f5f5; padding:1rem; border-radius:0.5rem; font-size:1.3rem; margin-bottom:2rem;">src/
+├── components/
+│   └── pulsemind/     → Módulos funcionais (Check-in, Clima, Análise, etc.)
+├── pages/             → Rotas principais (home, 404)
+├── hooks/             → Custom hooks
+├── lib/               → Funções utilitárias
+└── types/             → Tipos TypeScript</pre>
+        <h2 style="margin-bottom:1.5rem;">🚀 Execução Local</h2>
+        <pre style="background:#f5f5f5; padding:1rem; border-radius:0.5rem; font-size:1.3rem; margin-bottom:2rem;">git clone &lt;url-do-repositorio&gt;
+cd pulsemind
+npm install
+npm run dev</pre>
+        <p>Outros scripts: build, preview, lint.</p>
+        <h2 style="margin-bottom:1.5rem;">🔮 Roadmap Futuro</h2>
+        <ul style="margin-bottom:2rem;">
+          <li><b>Integrações Planejadas:</b><br>Backend: Node.js + MongoDB<br>IA: Python para análise emocional<br>Slack, MS Teams, Google Calendar<br>OAuth para login corporativo</li>
+          <li><b>Novas Funcionalidades:</b><br>Relatórios personalizados<br>Integração com RH e APIs externas<br>App mobile e análise de sentimentos em tempo real</li>
+        </ul>
+        <h2 style="margin-bottom:1.5rem;">🤝 Contribuição</h2>
+        <p>Basta fazer fork, criar uma branch, commitar sua feature e abrir um Pull Request. Licenciado sob MIT.</p>
+        <p><b>PulseMind transforma dados emocionais em ações práticas para promover saúde mental e engajamento no trabalho.<br> Tecnologia a serviço do bem-estar organizacional.</b></p>
+      </div>
+    </div>
+    <!-- Modal para imagem ampliada PulseMind -->
+    <div id="pulsemind-modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:1000;">
+      <span id="close-pulsemind-modal" style="position:absolute; top:2rem; right:3rem; font-size:3rem; color:#fff; cursor:pointer; font-weight:bold;">&times;</span>
+      <img src="assets/pulsemind.png" alt="PulseMind - Plataforma de Bem-Estar Corporativo" style="max-width:90vw; max-height:90vh; border-radius:1rem; box-shadow:0 0 20px #000; background:#fff;" />
+    </div>
     <!-- script -->
     <script src="scripts/index.js"></script>
   </body>

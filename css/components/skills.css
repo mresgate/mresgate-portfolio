@@ -32,6 +32,13 @@
   margin: 0 auto;
 }
 
+.skills .skills__content ul li .image-container img {
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: contain;
+  display: block;
+}
+
 .skills .skills__content ul li h3 {
   font-size: 1.6rem;
   font-weight: 500;
